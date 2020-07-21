@@ -1,0 +1,41 @@
+{
+	"name": "wiperawa/pwa-ios-add-to-screen-yii-widget",
+	"description": "Simple widget that display 'install app on your iphone' dialog box.",
+	"keywords": ["yii2", "extension", "widget", "pwa", "install", "app", "ios", "iphone"],
+	"type": "yii2-extension",
+	"license": "MIT",
+	"support": {
+		"issues": "https://github.com/wiperawa/pwa-ios-add-to-screen-yii-widget/issues",
+		"wiki": "https://github.com/wiperawa/pwa-ios-add-to-screen-yii-widget/wiki/",
+		"source": "https://github.com/wiperawa/pwa-ios-add-to-screen-yii-widget"
+	},
+	"authors": [
+		{
+			"name": "Dmitriy Lukeryanov",
+			"email": "wiperawa@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+
+	"require": {
+		"php": ">=5.4.0",
+		"yiisoft/yii2": "~2.0.6"
+	},
+
+	"require-dev": {
+		"phpunit/phpunit": "<7"
+	},
+	"autoload": {
+		"psr-4": { "wiperawa\\pwa\\iosAddToScreen\\": "src/" }
+	},
+	"autoload-dev": {
+		"psr-4": { "wiperawa\\pwa\\iosAddToScreen\\": "tests/" }
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	]
+}

@@ -1,0 +1,52 @@
+
+.pwa-ios-install-container {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    z-index: 1000;
+}
+.pwa-ios-install {
+    max-width: 100%;
+}
+
+.pwa-ios-install > .pwa-ios-speech-bubble {
+    padding: 5px 10px;
+    min-height: 58px;
+    position: relative;
+    width: 100%;
+    background-color: rgba(207, 204, 196, 0.93);
+}
+.pwa-ios-close-install {
+    color: rgba(36, 151, 140, 0.87);
+    fill: currentcolor;
+    height: 24px;
+    width: 24px;
+    user-select: none;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    position: absolute;
+    right: 0;
+}
+
+.pwa-ios-install-brand-img {
+    border-radius: 13px;
+    margin: 5px 5px 0px 0px;
+    float: left;
+}
+.pwa-ios-install-description {
+    padding-right:  15px;
+}
+
+.pwa-ios-brand-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    margin: 5px 5px 0px 0px;
+    float: left;
+}
+
+.pwa-ios-instruction-div {
+    padding-right: 15px;
+}
+
+
