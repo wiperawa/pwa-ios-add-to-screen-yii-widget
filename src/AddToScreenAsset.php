@@ -1,10 +1,11 @@
 <?php
 
-namespace wiperawa\pwa\iosAddToScreen;
+namespace wiperawa\pwa\IosAddToScreen;
 
 use yii\web\AssetBundle;
 
-class addToScreenAsset extends AssetBundle {
+class AddToScreenAsset extends AssetBundle {
+
 
     public $css = [
         'css/ios-install-widget.css'
@@ -13,7 +14,7 @@ class addToScreenAsset extends AssetBundle {
     public function init()
     {
         parent::init();
-        $this->sourcePath = __DIR__.'/assets';
+        $this->sourcePath = dirname(__DIR__).'/assets';
     }
 
 }
