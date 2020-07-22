@@ -4,6 +4,7 @@ namespace wiperawa\pwa\IosAddToScreen;
 
 use Yii;
 use yii\base\Widget;
+use yii\web\View;
 
 class AddToScreenWidget extends Widget {
 
@@ -98,16 +99,27 @@ class AddToScreenWidget extends Widget {
     private function registerJs()
     {
         $js = <<<JS
+const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test( userAgent );
+};
+       
+const isInStand = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+if (isIos() && !isInStand()) {
+    document.querySelector('.pwa-ios-install-container').style.display = 'block';
+}
+
 document.querySelector('.pwa-ios-close-install').addEventListener('click', function(e)
 {
     let exDate = new Date();
     exDate.setSeconds(exDate.getSeconds() + {$this->cookieLifeTime});
     let cValue = '1' + "; sameSite=Lax; expires=" + exDate.toUTCString();
     document.cookie = "{$this->cookieName}=" + cValue;
-    document.querySelector('.pwa-ios-install').style.display = 'none';
+    document.querySelector('.pwa-ios-install-container').style.display = 'none';
 });
 JS;
 
-        $this->getView()->registerJs($js);
+        $this->getView()->registerJs($js, View::POS_END);
     }
 }
