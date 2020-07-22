@@ -3,8 +3,9 @@
 
 Progressive Web Apps 'Add app to screen' message widget.
 
-
-<img align="center" src="https://github.com/wiperawa/pwa-ios-add-to-screen-yii-widget/blob/master/example.png?raw=true">
+<p align="center">
+    <img align="center" src="https://github.com/wiperawa/pwa-ios-add-to-screen-yii-widget/blob/master/example.png?raw=true">
+</p>
 
 As you know, if you have  PWA-compatible site, android will prompt to add its icon to desktop by default, but iOS dont have this, so we have to add such message manually.
  
