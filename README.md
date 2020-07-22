@@ -13,7 +13,7 @@ This widget adds message at bottom of the page only when user-agent is iOS and w
 
 By closing this message box, widget set limited-time cookie, when this cookie active message will not be shown(see widget config for details).
 
-##installation
+## installation
 
    The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
    
@@ -31,7 +31,7 @@ By closing this message box, widget set limited-time cookie, when this cookie ac
    
    to the ```require``` section of your `composer.json` file.
 
-##usage
+## usage
 
 Here is the Widget usage example, with DEFAULT parameters, if you dont want to change it, can omit them.
 ```php
