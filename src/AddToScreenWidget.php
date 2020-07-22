@@ -25,7 +25,7 @@ class AddToScreenWidget extends Widget {
     public $welcomeText = 'Install @appName on your IPhone: ';
 
     /**
-     * @var string instrruction text
+     * @var string instruction text
      */
     public $instructionText = "push @iosShareImg and then @iosAddImg to screen 'Home'";
 
